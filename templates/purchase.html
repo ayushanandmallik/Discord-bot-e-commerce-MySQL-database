@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Purchase coins {% endblock %}
+{% block content %}
+
+<div class="alert alert-info" role="alert" style="margin: 0 auto;
+margin-top: 7%;
+width: 30%;">
+ Confirm buying {{ coin.no_of_coins }} coins for {{ coin.price/100 }}$ ?
+  <br>
+  You will be redirected to payment page.
+  <br>
+<form action="/checkout/{{ coin.no_of_coins }}/{{ coin.price }}" method="POST">
+      <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="{{ key }}"
+        data-description="Invite+ coins"
+        data-locale="auto">
+      </script>
+    </form></div>
+
+{% endblock %}

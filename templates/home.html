@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}Invite+ {% endblock %}
+
+{% block content %}
+<div class="card" style="width: 18rem;">
+  <img src="{{url_for('static', filename='coins.jpg')}}" class="card-img-top" alt="coins">
+  <div class="card-body">
+    <h5 class="card-title">Invite+ Coins</h5>
+      <p class="card-text">25 coins- 1$<a href="/purchase/25/100" class="btn btn-primary" style="margin-left:50px;">Buy now</a><br>
+      <p></p>
+    <p class="card-text">75 coins- 3$<a href="/purchase/75/300" class="btn btn-primary" style="margin-left:50px;">Buy now</a><br>
+      <p></p>
+    300 coins- 10$<a href="/purchase/300/1000" class="btn btn-primary" style="margin-left:33px;">Buy now</a><br>
+      <p></p>
+    700 coins- 25$<a href="/purchase/700/2500" class="btn btn-primary" style="margin-left:33px;">Buy now</a><br>
+      <p></p>
+    1000 coins- 35$<a href="/purchase/1000/3500" class="btn btn-primary" style="margin-left:24px;">Buy now</a><br>
+      <p></p>
+    1300 coins- 45$<a href="/purchase/1300/4500" class="btn btn-primary" style="margin-left:25px;">Buy now</a><br>
+      <p></p>
+    1500 coins- 50$<a href="/purchase/1500/5000" class="btn btn-primary" style="margin-left:25px;">Buy now</a></p><br>
+      <p></p>
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+{%block footer %}
+   <!-- Footer -->
+<footer class="page-footer font-small teal pt-4" style="background-color: #001133;
+color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;">
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">About</h5>
+        <p>Invite+ bot of discord is created with aim to help your discord server increase members at a rapid pace. You can purchase coins from this website and use the coins to increase the members in your server.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">Important links</h5>
+        <a href="https://discord.gg/nMJZdmh" target="_blank">Join our discord server</a>
+        <br>
+        <a href="https://discord.com/oauth2/authorize?client_id=743294031983018024&permissions=8&scope=bot">Invite invite+ bot to your server</a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Text -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">Developed by:
+    <a href="https://github.com/ayushanandmallik"> Ayush Anand Mallik</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  {% endblock %}

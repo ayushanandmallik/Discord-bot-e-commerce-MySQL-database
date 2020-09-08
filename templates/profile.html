@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %} Profile {% endblock %}
+
+{% block content %}
+<div class="card" style="width: 18rem;" id="prav">
+  <img src="{{url_for('static', filename='profile.jpg')}}" class="card-img-top" alt="profile avatar" id="prpic">
+  <div class="card-body">
+
+    <h5 class="card-title">{{ user.Name }}</h5>
+    <p class="card-text">Discord Username: {{ user.Discord_username }}</p>
+    <p class="card-text">Email: {{ user.Email }}</p>
+    <p class="card-text">Total number of coins bought: {{ user.Tcoins }}</p>
+    <p class="card-text">Coins remaining to be credited to discord account: {{ user.Rcoins }}</p>
+
+    <a href="/" class="btn btn-primary">Buy more Coins</a>
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+{%block footer %}
+   <!-- Footer -->
+<footer class="page-footer font-small teal pt-4" style="background-color: #001133;
+color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;">
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">About</h5>
+        <p>Invite+ bot of discord is created with aim to help your discord server increase members at a rapid pace. You can purchase coins from this website and use the coins to increase the members in your server.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">Important links</h5>
+        <a href="https://discord.gg/nMJZdmh" target="_blank">Join our discord server</a>
+        <br>
+        <a href="https://discord.com/oauth2/authorize?client_id=743294031983018024&permissions=8&scope=bot">Invite invite+ bot to your server</a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Text -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">Developed by:
+    <a href="https://github.com/ayushanandmallik"> Ayush Anand Mallik</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  {% endblock %}
+

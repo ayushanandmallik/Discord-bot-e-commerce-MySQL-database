@@ -1,0 +1,45 @@
+
+
+
+
+#f {
+background-color: #001133;
+position: absolute;
+color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.s_form{
+margin: 0 auto;
+margin-top: 7%;
+width: 30%;
+}
+
+
+.l_form{
+margin: 0 auto;
+margin-top: 7%;
+width: 30%;
+
+}
+
+#prav{
+ margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+}
+
+.card {
+margin: 0 auto;
+margin-top: 2%;
+margin-bottom: 2%;
+width: 30%;
+         /*margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;*/
+
+}
+
